@@ -53,11 +53,7 @@ class MyApp extends StatelessWidget {
               },
               itemCount: myColor.length,
               itemBuilder: ((context, index) {
-                return Container(
-                  height: 300,
-                  width: 100,
-                  color: myColor[index],
-                );
+                return Text('Halo');
               })),
         ),
       ),
