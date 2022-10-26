@@ -16,25 +16,25 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           margin: EdgeInsets.all(20),
-          child: Column(
+          child: ListView(
             children: <Widget>[
               Container(
-                height: 100,
+                height: 300,
                 width: 100,
                 color: Colors.blue,
               ),
               Container(
-                height: 100,
+                height: 300,
                 width: 100,
                 color: Colors.red,
               ),
               Container(
-                height: 100,
+                height: 300,
                 width: 100,
                 color: Colors.yellowAccent,
               ),
               Container(
-                height: 100,
+                height: 300,
                 width: 100,
                 color: Colors.black87,
               )
