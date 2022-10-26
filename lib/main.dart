@@ -44,7 +44,13 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           margin: EdgeInsets.all(20),
-          child: ListView.builder(
+          child: ListView.separated(
+              separatorBuilder: (context, index) {
+                return Container(
+                  color: Colors.white,
+                  height: 10,
+                );
+              },
               itemCount: myColor.length,
               itemBuilder: ((context, index) {
                 return Container(
