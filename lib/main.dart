@@ -6,13 +6,13 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // const MyWidget({super.key});
-  List<Color> myColor = [
+  final List<Color> myColor = [
     Colors.blue,
     Colors.red,
     Colors.yellowAccent,
     Colors.black87
   ];
-  List<Widget> myList = [
+  final List<Widget> myList = [
     Container(
       height: 300,
       width: 100,
