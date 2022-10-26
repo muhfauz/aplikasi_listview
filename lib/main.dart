@@ -6,6 +6,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // const MyWidget({super.key});
+  List<Color> myColor = [
+    Colors.blue,
+    Colors.red,
+    Colors.yellowAccent,
+    Colors.black87
+  ];
   List<Widget> myList = [
     Container(
       height: 300,
@@ -38,10 +44,15 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           margin: EdgeInsets.all(20),
-          child: ListView(
-            // scrollDirection: Axis.horizontal,
-            children: myList,
-          ),
+          child: ListView.builder(
+              itemCount: myColor.length,
+              itemBuilder: ((context, index) {
+                return Container(
+                  height: 300,
+                  width: 100,
+                  color: myColor[index],
+                );
+              })),
         ),
       ),
     );
