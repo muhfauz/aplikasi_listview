@@ -6,6 +6,28 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // const MyWidget({super.key});
+  List<Widget> myList = [
+    Container(
+      height: 300,
+      width: 100,
+      color: Colors.blue,
+    ),
+    Container(
+      height: 300,
+      width: 100,
+      color: Colors.red,
+    ),
+    Container(
+      height: 300,
+      width: 100,
+      color: Colors.yellowAccent,
+    ),
+    Container(
+      height: 300,
+      width: 100,
+      color: Colors.black87,
+    )
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -17,28 +39,8 @@ class MyApp extends StatelessWidget {
         body: Container(
           margin: EdgeInsets.all(20),
           child: ListView(
-            children: <Widget>[
-              Container(
-                height: 300,
-                width: 100,
-                color: Colors.blue,
-              ),
-              Container(
-                height: 300,
-                width: 100,
-                color: Colors.red,
-              ),
-              Container(
-                height: 300,
-                width: 100,
-                color: Colors.yellowAccent,
-              ),
-              Container(
-                height: 300,
-                width: 100,
-                color: Colors.black87,
-              )
-            ],
+            // scrollDirection: Axis.horizontal,
+            children: myList,
           ),
         ),
       ),
